@@ -1,0 +1,43 @@
+.container {
+    position: relative; /* Make the container relative for absolute positioning to work */
+    width: 100vw;  /* Set container width to 100% viewport width */
+    height: 100vh; /* Set container height to 100% viewport height */
+  }
+  
+  .container button {
+    position: absolute; /* Make button absolute to position it within the container */
+    top: 18%;
+    left: 52%;
+    transform: translate(-50%, -50%); /* Offset button to compensate for its own size */
+    color: 	purple;
+    font-size: 20pt;
+    background-color: #b8d8be;
+    border: none; /* Remove default button border for cleaner look */
+    border-radius: 50%;
+  }
+
+  button:hover {
+    /* Styles applied on hover */
+    background-color: #e0f0e3; /* Change background to a darker blue on hover */
+    cursor: pointer; /* Change cursor to indicate clickability */
+  }
+  
+  button {
+    width: 200px;
+    height: 200px;
+    position: relative; /* Needed for applying pseudo-elements */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Subtle bottom shadow */
+  }
+
+  body {
+    background: #C8A2C8 url('cat.png') no-repeat fixed;
+    background-position: top right;
+    background-size: 50%;
+    overflow: hidden; /* Restricts scrolling in both directions */
+  }
+
+  div.result {
+    position: bottom left;
+  }
+  
+  
